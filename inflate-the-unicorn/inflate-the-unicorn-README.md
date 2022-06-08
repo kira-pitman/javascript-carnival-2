@@ -42,7 +42,7 @@ You might be asking yourself something like, "how do I change an HTML image usin
 
 5. In order to change the unicorn to the correct next image, you're going to need to keep track of the current number that each unicorn is on and use this to decide which image to change to.
 
-There are several ways you could do this, and it just depends what makes the most sense to you. You probably are going to want to create some variables (perhaps `var unicorn1 = 0`, or `var unicorn1 = "empty"`). You could choose to store all the unicorn states in a single object, or even an array! It's up to you!
+There are several ways you could do this, and it just depends what makes the most sense to you. You probably are going to want to create some variables (perhaps `let unicorn1 = 0`, or `let unicorn1 = "empty"`). You could choose to store all the unicorn states in a single object, or even an array! It's up to you!
 
 6. If a unicorn has cycled through all the images and the balloon is full, clicking on them should pop up an alert on your page that says something like, "Unicorn Number `x` says thank you!". 
 
