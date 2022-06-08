@@ -46,14 +46,14 @@ Hopefully that worked.. but frankly it's a pretty terrible function. This functi
 
 What you really want is to be able to call the function over and over again, and have the `src` of the image change based on some kind of head index counter. 
 
-6. Create a variable to store the current number of the head image. ie, `var headIndex = 0`. This variable should be *outside of your function* so we can increase every time this function is called, but also use it in other functions.
+6. Create a variable to store the current number of the head image. ie, `let headIndex = 0`. This variable should be *outside of your function* so we can increase every time this function is called, but also use it in other functions.
 
 So what you're probably thinking now is: "What good does that do me?? How do I use the head variable to set the `src` of the head image variable??". Allow me to blow your mind with the concept of [concatenation](https://www.w3schools.com/jsref/jsref_concat_string.asp). This allows you to construct a string from different variables, which we can then use as the string for your head `src`. 
 
 7. In your `changeClownHead` function, create a variable to store your string. You can use the `concat` method linked above, or simply add strings together with a plus symbol. ie, 
 
 ```
-var headSrc = "./images/head" + headIndex + ".png"
+let headSrc = "./images/head" + headIndex + ".png"
 ``` 
 
 8. Once you have this string, use it to update your image src and then increase your `headIndex` variable by one. This means that next time you call this function, it should be using the next image instead of the same one.
@@ -72,7 +72,7 @@ Okay so that problem solved, now lets refactor your code again to allow for togg
 
 You should now have a fully functioning Put A Clown In Different Hats Simulator. The next step is going to be using the up and down arrow keys to *toggle between the different body parts*.  
 
-12. You're going to need another index that keeps track of which body part you are currently selecting clothing for. Something along the lines of `var clothingIndex = 0`. The index will correspond to the different body parts: `0 = head, 1 = body, 2 = feet`. Write some code that allows you to *use the up and down arrow keys to increase and decrease the clothingIndex variable*, and to make sure it doesn't go too high or low. For now you could `console.log` this number to make sure it's working.
+12. You're going to need another index that keeps track of which body part you are currently selecting clothing for. Something along the lines of `let clothingIndex = 0`. The index will correspond to the different body parts: `0 = head, 1 = body, 2 = feet`. Write some code that allows you to *use the up and down arrow keys to increase and decrease the clothingIndex variable*, and to make sure it doesn't go too high or low. For now you could `console.log` this number to make sure it's working.
 
 Now comes the part where we bring all the pieces together. 
 
