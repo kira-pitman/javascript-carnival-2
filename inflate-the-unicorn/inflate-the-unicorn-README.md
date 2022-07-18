@@ -58,6 +58,6 @@ Make sure you commit and push to GitHub.
 
 ## Stretch
 
-- Once you click on a satisfied unicorn, instead of popping up an alert, what else could happen?
+- Once a balloon is fully inflated, instead of an alert popping up, what else could happen? :confetti_ball:
 
 - Would adding some sound effects to this process make it more interesting? What sound does a unicorn make? 
