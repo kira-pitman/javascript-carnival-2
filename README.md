@@ -17,7 +17,7 @@ Reflect             | 30 minutes
 
 1. Before you start working through this challenge, make sure you have forked this repo to your own account.
 
-2. Clone this repo from your GitHub to your computer.
+2. Clone the forked repo from your GitHub to your computer.
 
 3. Open the repo in VS Code and have a look around.
 
