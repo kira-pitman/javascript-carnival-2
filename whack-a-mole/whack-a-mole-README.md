@@ -42,7 +42,7 @@ If you would like to challenge yourself, we invite you to complete this exercise
 
 We need to find a way to _store references_ to all off the cells so we can then put a mole in one of them. 
 
-There are multiple ways you could go about doing this; we would recommend reading up on how to work with [HTML tables using Javascript](https://www.w3schools.com/jsref/coll_table_cells.asp). You can use this to create a variable equal to this _2D array_ (an array that holds arrays), or to create a single array and then fill it with the cells. If that is a daunting task, remember you can always *ask the internet how to do it*.
+There are multiple ways you could do this; you could [create an array and fill it with the cells](https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp), or read up on how to work with [HTML tables using Javascript](https://www.w3schools.com/jsref/coll_table_cells.asp) and create a variable equal to a _2D array_ (i.e. an array that holds arrays). If that is a daunting task, remember you can always *ask the internet how to do it*.
 
 #### Random cell selector
 
