@@ -9,18 +9,18 @@
 - Calling functions with the `onclick` method
 - Conditionals
 - String concatenation
-- Using alerts in your browser
+
 
 ## Summary
 
 These unicorns have balloons for horns; but what good is a deflated horn? 
 
-In this challenge you are going to replace the placeholder images with our deflated unicorns, then write some logic that cycles through the appropriate images when you click on a unicorn. Once the unicorn horn is fully inflated, an alert will pop up on the screen with a heartfelt THANK YOU from the unicorn. 
+First you need to change the placeholder images to the deflated unicorns image. Then write logic so that whenever you click on one of the unicorns, each click changes the unicorn image to inflate the balloon (i.e. the balloon changes from deflated to inflated with each click).  
 
 #### Resources
 [HTML Images](https://www.w3schools.com/html/html_images.asp)\
-[Javascript onclick() method](https://www.w3schools.com/jsref/event_onclick.asp)\
-[Javascript Alerts](https://www.w3schools.com/jsref/met_win_alert.asp)
+[Javascript onclick() method](https://www.w3schools.com/jsref/event_onclick.asp)
+
 
 ## Help those unicorns! 
 
@@ -44,9 +44,7 @@ You might be asking yourself something like, "how do I change an HTML image usin
 
 There are several ways you could do this, and it just depends what makes the most sense to you. You probably are going to want to create some variables (perhaps `let unicorn1 = 0`, or `let unicorn1 = "empty"`). You could choose to store all the unicorn states in a single object, or even an array! It's up to you!
 
-6. If a unicorn has cycled through all the images and the balloon is full, clicking on them should pop up an alert on your page that says something like, "Unicorn Number `x` says thank you!". 
-
-Congratulations! You've successfully fixed the unicorn game and the crowds are eager to give it a go!
+6. If all three unicorns can cycle through all the images and their balloons are full, you've fixed the game. Congratulations! You've successfully fixed the unicorn game and the crowds are eager to give it a go!
 
 Make sure you push your code up to GitHub so we can all enjoy it!
 
@@ -58,6 +56,6 @@ Make sure you commit and push to GitHub.
 
 ## Stretch
 
-- Once a balloon is fully inflated, instead of an alert popping up, what else could happen? e.g. JS confetti animation :confetti_ball:
+- Once a balloon is fully inflated what else could happen? e.g. JS confetti animation :confetti_ball:
 
 - Would adding some sound effects to this process make it more interesting? What sound does a unicorn make? 
