@@ -58,6 +58,5 @@ Make sure you commit and push to GitHub.
 
 ## Stretch
 
-- Once a balloon is fully inflated what else could happen? e.g. JS confetti animation :confetti_ball:
-
 - Would adding some sound effects to this process make it more interesting? What sound does a unicorn make? 
+- Could this game work as a massively online multiplayer game like World of Warcraft? Try doing that!
