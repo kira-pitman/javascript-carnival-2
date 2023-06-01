@@ -9,7 +9,7 @@
 - onClick() method
 - Playing audio with Javascript
 - Conditional logic
-- Working with Randomness
+- Working with Randomness and modules
 
 ## Summary
 
@@ -18,7 +18,6 @@ The Javascript Carnival has a mole problem! But it's the opposite problem to the
 #### Resources
 
 [HTML Tables](https://www.w3schools.com/html/html_tables.asp)\
-[Javascript Random](https://www.w3schools.com/js/js_random.asp)\
 [Javascript onClick() method](https://www.w3schools.com/jsref/event_onclick.asp)\
 [Playing audio with Javascript](https://www.developphp.com/lib/JavaScript/Audio)
 
@@ -46,14 +45,19 @@ There are multiple ways you could do this; you could [create an array and fill i
 
 #### Random cell selector
 
-Once you have a reference to all the cells, the next step is to write a function that will randomly select one to put the mole in. If you have stored the cells in an array (or a 2D array), you can create an indexer function. This function should generate and return a random number (within a certain range) that we can then use to get the corresponding cell from inside your array. ie, 
+Once you have a reference to all the cells, the next step is to write a function that will randomly select one to put the mole in. If you have stored the cells in an array, you can create an indexer function. 
+It just so happens we've provided a module that you can use to generate a random number. You can import it like this:
+
+`import { getRandomNumber } from './random-number.js'`
+
+This function will generate and return a random number (within a certain range) that we can then use to get the corresponding cell from inside your array. ie, 
 
 ```
-let randomIndex = functionToGetRandomNumber()
+let randomIndex = getRandomNumber(0, 24)
 let randomCell = cellsArray[randomIndex]
 ```
 
-Note: This game board consists of 25 cells, stored in 5 rows of 5. Your random indexer should start at 0 and stop at the end of the array, otherwise it will try to access cells that don't exist and you will get an "indexer out of bounds" error.
+Note: This game board consists of 25 cells, stored in 5 rows of 5. Your random indexer should start at 0 and stop at the end of the array, otherwise it will try to access cells that don't exist and you will get an "indexer out of bounds" error. It would probably be better to use the length of the array instead of a hard coded number, like `let randomIndex = getRandomNumber(0, theNameOfYourArray.length)`.
 
 #### Show the mole
 

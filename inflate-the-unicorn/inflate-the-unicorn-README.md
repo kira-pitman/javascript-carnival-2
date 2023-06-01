@@ -44,7 +44,7 @@ You might be asking yourself something like, "how do I change an HTML image usin
 
 There are several ways you could do this, and it just depends what makes the most sense to you. You probably are going to want to create some variables (perhaps `let unicorn1 = 0`, or `let unicorn1 = "empty"`). You could choose to store all the unicorn states in a single object, or even an array! It's up to you!
 
-6. When a unicorn gets to the fully inflated state, confetti should burst onto the screen! We're using [the confetti package from esm.sh](https://esm.sh/#docs), which conveniently is the example package from their homepage. Simply call it as a function! 
+6. When a unicorn gets to the fully inflated state, confetti should burst onto the screen! We're using [the confetti package from skypack](https://www.skypack.dev/view/canvas-confetti), import it at the top of your Javascript file (using just that import line from the link above, don't include the `<script>` tags it's wrapped in) and then call it as a function. 
 
 7. If all three unicorns can cycle through all the images and their balloons are full, you've done! Congratulations! You've successfully fixed the unicorn game and the crowds are eager to give it a go!
 
