@@ -9,7 +9,7 @@
 - Calling functions with the `onclick` method
 - Conditionals
 - String concatenation
-
+- Use a module to celebrate your victory
 
 ## Summary
 
@@ -44,7 +44,9 @@ You might be asking yourself something like, "how do I change an HTML image usin
 
 There are several ways you could do this, and it just depends what makes the most sense to you. You probably are going to want to create some variables (perhaps `let unicorn1 = 0`, or `let unicorn1 = "empty"`). You could choose to store all the unicorn states in a single object, or even an array! It's up to you!
 
-6. If all three unicorns can cycle through all the images and their balloons are full, you've fixed the game. Congratulations! You've successfully fixed the unicorn game and the crowds are eager to give it a go!
+6. When a unicorn gets to the fully inflated state, confetti should burst onto the screen! We're using [the confetti package from skypack](https://www.skypack.dev/view/canvas-confetti), import it at the top of your Javascript file (using just that import line from the link above, don't include the `<script>` tags it's wrapped in) and then call it as a function. 
+
+7. If all three unicorns can cycle through all the images and their balloons are full, you've done! Congratulations! You've successfully fixed the unicorn game and the crowds are eager to give it a go!
 
 Make sure you push your code up to GitHub so we can all enjoy it!
 
@@ -56,6 +58,5 @@ Make sure you commit and push to GitHub.
 
 ## Stretch
 
-- Once a balloon is fully inflated what else could happen? e.g. JS confetti animation :confetti_ball:
-
 - Would adding some sound effects to this process make it more interesting? What sound does a unicorn make? 
+- Could this game work as a massively online multiplayer game like World of Warcraft? Try doing that!

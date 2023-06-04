@@ -8,10 +8,11 @@
 - Using Javascript to change HTML images.
 - Binding functions to the arrow keys.
 - Writing logical, DRY functions in Javascript.
+- Using a module to save a photo of your newly created clown. 
 
 ## Summary
 
-Look at that clown! Sure, he looks pretty good; but without an outfit can he really _call himself a clown?_
+Look at that clown! Sure, they look pretty good; but without an outfit can they really _call themselves a clown?_
 
 We are going to write some `JavaScript functions` and bind them to the arrow keys on your keyboard. The *up and down arrow keys* will move between different parts of the clown, and the *left and right* arrow keys will cycle between different clothing options.
 
@@ -78,7 +79,9 @@ Now comes the part where we bring all the pieces together.
 
 13. Refactor your code so that if your `clothingIndex == 0`, the left and right arrow keys change the head image, if the `clothingIndex == 1`, the left and right arrow keys change the body image, etc. Try to avoid duplicating your code whenever possible (keep it DRY). In fact, instead of duplicating the entire `changeClownHead` function, try reworking it into a `changeClothes` function that can change any of the body parts. The logic is going to be _almost identical_. Really the main difference is going to be which HTML `<img>` you are changing, and therefore what your concatenated `src` string is.
 
-Once that's working, you're done! Push your code up to github and you can dress the clown to your heart's content! Awesome job!
+14. All going well, it should be working! Now we're going to use a module to take a picture of your clown. You can have a look in the `screenshot.js` file, don't worry if it's confusing in there. Import at at the top of your file like this: `import { save } from './screenshot.js'`. It gives you a function that takes three arguments, and you can use it in your own Javascript file like this: `save(shoes, body, head)`. Note, you'll need to use the names for the variables you created for your HTML `img` elements. You might have named them differently from this example. 
+
+Once that's working, you're done! Push your code up to github and you can dress the clown to your heart's content! Awesome job! Feel free to post a picture of your dressed clown into discord for everyone to enjoy and treasure.
 
 ## Reflection
 
@@ -92,4 +95,4 @@ Commit and push to GitHub.
 
 - Try adding some of your own outfits! Copy one of the images and doodle on it in the paint application of choice.
 
-- What if there was a button you could press that could SAVE a picture of your clown to your computer to share with your friends? How on earth would you do that?
+- Could you turn pictures of your clowns into NFTs? Probably! But please don't.

@@ -2,7 +2,7 @@
 
 ## Summary
 
-Welcome to the JavaScript Carnival! It's a wonderful place full of exciting games and activities... Just kidding! All three of our games are broken. Please help us fix the carnival using your JavaScript skills.
+Welcome to the JavaScript Carnival! It's a wonderful place full of exciting games and activities... Just kidding! All three of our games are broken. Please help us fix the carnival using your JavaScript skills. We're also going to use some modules to help us out and spice things up.
 
 ## Timebox
 
@@ -21,9 +21,14 @@ Reflect             | 30 minutes
 
 3. Open the repo in VS Code and have a look around.
 
+4. Run `npx serve` from your terminal. (Make sure you're at the root of the directory. AKA the "top", the main.. place)
+Because we're using modules in this exercise it won't work if you just straight up open the html file in your browser. 
+
+5. Open localhost:3000 and navigate to the html file for the first challenge, inflate-the-unicorn.html.
+
 ## The Games
 
-These games are all independent from each other, however they are listed in order of difficulty so try fixing them in order. 
+These games are all independent from each other, however they are listed in order of difficulty so try doing them in order. 
 
 [Inflate The Unicorn](./inflate-the-unicorn/inflate-the-unicorn-README.md)  
 These poor unicorns have balloons for horns. Write code that inflates them!
