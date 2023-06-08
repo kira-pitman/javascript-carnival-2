@@ -79,7 +79,24 @@ Now comes the part where we bring all the pieces together.
 
 13. Refactor your code so that if your `clothingIndex == 0`, the left and right arrow keys change the head image, if the `clothingIndex == 1`, the left and right arrow keys change the body image, etc. Try to avoid duplicating your code whenever possible (keep it DRY). In fact, instead of duplicating the entire `changeClownHead` function, try reworking it into a `changeClothes` function that can change any of the body parts. The logic is going to be _almost identical_. Really the main difference is going to be which HTML `<img>` you are changing, and therefore what your concatenated `src` string is.
 
-14. All going well, it should be working! Now we're going to use a module to take a picture of your clown. You can have a look in the `screenshot.js` file, don't worry if it's confusing in there. Import at at the top of your file like this: `import { save } from './screenshot.js'`. It gives you a function that takes three arguments, and you can use it in your own Javascript file like this: `save(shoes, body, head)`. Note, you'll need to use the names for the variables you created for your HTML `img` elements. You might have named them differently from this example. 
+14. All going well, it should be working! Now we're going to use a module to take a picture of your clown. You can have a look in the `screenshot.js` file, don't worry if it's confusing in there. Import at at the top of your file like this: `import { save } from './screenshot.js'`. It gives you a function that takes an object as an argument, and you can use it in your own Javascript file like this: 
+
+```
+let clown = {
+    head: headVariable,
+    body: bodyVariable,
+    shoes: shoesVariable
+}
+
+save(clown)
+
+// or you could do it all in one line like: 
+
+save({head: headVariable, body: bodyVariable, shoes: shoesVariable})
+
+``` 
+
+Note, you'll need to use the names for the variables you created for your HTML `img` elements. I called them ___Variable, but you might have named them differently from this example. 
 
 Once that's working, you're done! Push your code up to github and you can dress the clown to your heart's content! Awesome job! Feel free to post a picture of your dressed clown into discord for everyone to enjoy and treasure.
 

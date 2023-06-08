@@ -1,4 +1,4 @@
-export function save(shoes, body, head) {
+export function save(clown) {
     // create a canvas element the same size as the
     // images
     const canvas = document.createElement("canvas");
@@ -7,9 +7,9 @@ export function save(shoes, body, head) {
   
     // draw each source image onto the canvas
     const context = canvas.getContext("2d");
-    context.drawImage(shoes, 0, 0);
-    context.drawImage(body, 0, 0);
-    context.drawImage(head, 0, 0);
+    context.drawImage(clown.shoes, 0, 0);
+    context.drawImage(clown.body, 0, 0);
+    context.drawImage(clown.head, 0, 0);
   
     // Get a blob from the canvas
     canvas.toBlob((blob) => {
