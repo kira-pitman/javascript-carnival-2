@@ -19,7 +19,7 @@ The Javascript Carnival has a mole problem! But it's the opposite problem to the
 
 [HTML Tables](https://www.w3schools.com/html/html_tables.asp)\
 [Javascript onClick() method](https://www.w3schools.com/jsref/event_onclick.asp)\
-[Playing audio with Javascript](https://www.developphp.com/lib/JavaScript/Audio)
+[Playing audio with Javascript](https://gomakethings.com/how-to-play-a-sound-with-javascript/)
 
 ## Whack! That! Mole!
 
