@@ -29,19 +29,30 @@ function unicornClicked(e) {
       canvasConfetti()
       unicorn.src = `./images/unicorn-0.png`
       unicornarr[0] = 0
-      console.log('congrat !')
     }
   }
 
   if (id == 1) {
-    unicornarr[1] += 1 // increase unicorn 1 number
-    unicorn.src = `./images/unicorn-${unicornarr[1]}.png`
+    if (unicornarr[1] < 4) {
+      unicornarr[1] += 1 // increase unicorn 1 number
+      unicorn.src = `./images/unicorn-${unicornarr[1]}.png`
+    }
+    if (unicornarr[1] >= 4) {
+      canvasConfetti()
+      unicorn.src = `./images/unicorn-0.png`
+      unicornarr[1] = 0
+    }
   }
 
   if (id == 2) {
-    unicornarr[2] += 1 // increase unicorn 2 number
-    unicorn.src = `./images/unicorn-${unicornarr[2]}.png`
+    if (unicornarr[2] < 4) {
+      unicornarr[2] += 1 // increase unicorn 2 number
+      unicorn.src = `./images/unicorn-${unicornarr[2]}.png`
+    }
+    if (unicornarr[2] >= 4) {
+      canvasConfetti()
+      unicorn.src = `./images/unicorn-0.png`
+      unicornarr[2] = 0
+    }
   }
-
-  console.log('clicked ur unicorn')
 }
