@@ -3,18 +3,13 @@
 // -    -   -   -   -  //
 import canvasConfetti from 'https://cdn.skypack.dev/canvas-confetti'
 
-console.log('Inflate The Unicorn!')
-
 let unicorns = document.getElementsByClassName('unicorn')
 
 for (let unicorn of unicorns) {
   unicorn.onclick = unicornClicked
 }
-//put in array afterwards
-let unicornarr = [0, 0, 0] // id corresponds to index
-// let unicorn0 = 0
-// let unicorn1 = 0
-// let unicorn2 = 0
+
+let unicornarr = [0, 0, 0]
 
 function unicornClicked(e) {
   let unicorn = e.currentTarget
@@ -22,7 +17,7 @@ function unicornClicked(e) {
 
   if (id == 0) {
     if (unicornarr[0] < 4) {
-      unicornarr[0] += 1 // increase unicorn 0 number
+      unicornarr[0] += 1
       unicorn.src = `./images/unicorn-${unicornarr[0]}.png`
     }
     if (unicornarr[0] >= 4) {
@@ -34,7 +29,7 @@ function unicornClicked(e) {
 
   if (id == 1) {
     if (unicornarr[1] < 4) {
-      unicornarr[1] += 1 // increase unicorn 1 number
+      unicornarr[1] += 1
       unicorn.src = `./images/unicorn-${unicornarr[1]}.png`
     }
     if (unicornarr[1] >= 4) {
@@ -46,7 +41,7 @@ function unicornClicked(e) {
 
   if (id == 2) {
     if (unicornarr[2] < 4) {
-      unicornarr[2] += 1 // increase unicorn 2 number
+      unicornarr[2] += 1
       unicorn.src = `./images/unicorn-${unicornarr[2]}.png`
     }
     if (unicornarr[2] >= 4) {
